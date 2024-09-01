@@ -1,0 +1,45 @@
+body {
+  
+  background-color:whitesmoke;
+  justify-content: center;
+  align-items:center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  
+  font-family:Georgia;
+  color: cadetblue;
+}
+
+.input_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  color:black;
+  border-style: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+button {
+  background-color:cadetblue;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
