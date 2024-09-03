@@ -52,4 +52,4 @@ function handle_function() {
 }
 
 
-(window as any).myFunction = handle_function;
+(window as any).handle_function = handle_function;
