@@ -7,7 +7,7 @@ function myFunction() {
   let newTD = document.createElement("li");
   newTD.style.marginBottom = "5px";
   newTD.style.listStyleType = "none";
-  
+
   let inputText = (document.getElementById("myText") as HTMLInputElement).value;
 
   if (!inputText.trim()) return; 
@@ -15,15 +15,22 @@ function myFunction() {
   var node = document.createTextNode(inputText);
 
   let doneButton = document.createElement("input");
-  doneButton.type = "checkbox",
+  doneButton.type = "checkbox";
   doneButton.style.marginLeft = "10px";
-  doneButton.style.marginRight = "10px"
+  doneButton.style.marginRight = "10px";
   
 
-  doneButton.addEventListener("click", () => {
-    newTD.style.textDecoration = "line-through";
-    newTD.style.color = "gray";
-    doneButton.disabled = true;
+  doneButton.addEventListener("change", () => {
+    if (doneButton.checked) {
+      //doneButton.disabled = false;
+      newTD.style.textDecoration = "line-through";
+      newTD.style.color = "gray";
+   
+    } else {
+      newTD.style.textDecoration = "none";
+      newTD.style.color = "black";
+      //doneButton.disabled = true;
+    }
     
   });
   
