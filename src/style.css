@@ -36,6 +36,9 @@ button {
   border-style: none;
   border-radius: 5px;
   margin-left: 10px;
+  height: 25px;
+  width: 40px
+  
 }
 
 .list {

@@ -5,16 +5,18 @@ function myFunction() {
   if (!view) return;
 
   let newTD = document.createElement("li");
+  newTD.style.marginBottom = "5px"
   let inputText = (document.getElementById("myText") as HTMLInputElement).value;
 
   if (!inputText.trim()) return; 
 
   var node = document.createTextNode(inputText);
 
-  let doneButton = document.createElement("button");
-  doneButton.textContent = "Done";
+  let doneButton = document.createElement("input");
+  doneButton.type = "checkbox",
   doneButton.style.marginLeft = "10px";
   doneButton.style.marginRight = "10px"
+  
 
   doneButton.addEventListener("click", () => {
     newTD.style.textDecoration = "line-through";
