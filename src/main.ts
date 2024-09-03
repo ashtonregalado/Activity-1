@@ -5,7 +5,9 @@ function myFunction() {
   if (!view) return;
 
   let newTD = document.createElement("li");
-  newTD.style.marginBottom = "5px"
+  newTD.style.marginBottom = "5px";
+  newTD.style.listStyleType = "none";
+  
   let inputText = (document.getElementById("myText") as HTMLInputElement).value;
 
   if (!inputText.trim()) return; 
