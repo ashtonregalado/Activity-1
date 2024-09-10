@@ -21,6 +21,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 input {
@@ -28,7 +29,38 @@ input {
   border-style: none;
   border-radius: 5px;
   padding: 5px;
+  margin-bottom: 10px;
+  
+  
 }
+
+.input_style {
+  color:black;
+  border-style: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.date_style {
+  color:black;
+  border-style: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.time_style {
+  color:black;
+  border-style: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
 
 button {
   background-color:cadetblue;
@@ -36,8 +68,16 @@ button {
   border-style: none;
   border-radius: 5px;
   margin-left: 10px;
+  
 
   
+}
+
+.button_area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
 }
 
 .add_button {
@@ -45,9 +85,29 @@ button {
   color: white;
   border-style: none;
   border-radius: 5px;
-  margin-left: 10px;
   height: 25px;
-  width: 40px
+  width: 40px;
+  margin-bottom: 10px;
+  
+}
+
+.sort_button {
+  background-color:cadetblue;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  height: 25px;
+  width: 50px
+}
+
+.reset_button {
+  background-color:cadetblue;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  height: 25px;
+  width: 50px;
+  
 }
 
 .list {
@@ -55,3 +115,38 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+
+.task_container_style {
+  display: flex;
+  width: 500px;
+  height: 70px;
+  background-color: white;
+  justify-content:space-between;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+
+}
+
+
+
+.node_container_style {
+  margin-right: 150px;
+}
+
+
+.date_time_container_style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 5px;
+  height: 70px;
+  width: 100px;
+  
+}
+
+

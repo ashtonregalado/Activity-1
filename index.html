@@ -16,8 +16,16 @@
     </div>
     
     <div class="input_bar">
-      <input type="text" id="myText" placeholder="Add Task"> 
+      <input class="input_style" type="text" id="myText" placeholder="Add Task"> 
+      <input class="date_style" type="date" id="setDate">
+      <input class="time_style" type="time" id="setTime">
       <button class="add_button" onclick="handle_function()">Add</button>
+
+      <div class="button_area">
+        <button class="sort_button" id="sort" onclick="sortTasks()">Sort</button>
+        <button class="reset_button" id="reset" onclick="resetSort()">Reset</button>
+      </div>
+      
 
       
     </div>
